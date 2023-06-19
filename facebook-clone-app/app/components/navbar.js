@@ -3,7 +3,6 @@ import { BsFacebook, BsMessenger } from "react-icons/bs";
 import { AiOutlineSearch, AiFillHome } from "react-icons/ai";
 import { IoStorefrontOutline, IoNotifications } from "react-icons/io5";
 import { CgMenuGridO } from "react-icons/cg";
-import { signOut, useSession } from "next-auth/react";
 import SignOutButton from "./signout";
 
 export default function Navbar() {
