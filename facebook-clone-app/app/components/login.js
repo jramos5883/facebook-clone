@@ -1,3 +1,7 @@
+"use client";
+
+import { signIn } from "next-auth/react";
+
 import { BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 
@@ -9,7 +13,10 @@ export default function Login() {
       </div>
 
       <div className="grid place-items-center bg-black">
-        <div className="flex gap-4 bg-[#fff] p-4 px-6 items-center rounded-[6px] cursor-pointer">
+        <div
+          className="flex gap-4 bg-[#fff] p-4 px-6 items-center rounded-[6px] cursor-pointer"
+          onClick={() => signIn()}
+        >
           <FcGoogle className="text-[30px]" /> SignIn with Google
         </div>
       </div>
