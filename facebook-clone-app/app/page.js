@@ -1,9 +1,16 @@
-import Login from "./components/login";
+import { getServerSession } from "next-auth";
 
-export default function Home() {
+import Login from "./components/login";
+import Navbar from "./components/navbar";
+
+export default async function Home() {
+  const session = await getServerSession();
+
+  if (!session) return <Login />;
+
   return (
     <>
-      <Login />
+      <Navbar />
     </>
   );
 }
