@@ -27,8 +27,8 @@ export default function Post({ data, id }) {
             className="w-[44px] h-[44px] object-cover rounded-full"
             src={data.userImg}
             alt="dp"
-            width={300}
-            height={500}
+            width={44}
+            height={44}
           />
           <div>
             <h1 className="text-[16px] font-semibold">{data.username}</h1>
@@ -57,7 +57,13 @@ export default function Post({ data, id }) {
 
       <div className="mt-[15px]">
         {data.image && (
-          <Image src={data.image} alt="post pic" width={300} height={500} />
+          <Image
+            src={data.image}
+            alt="post pic"
+            width={50}
+            height={50}
+            layout="responsive"
+          />
         )}
       </div>
 
