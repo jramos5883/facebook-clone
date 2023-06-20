@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth";
 import Login from "./components/login";
 import Navbar from "./components/navbar";
 import LeftSideBar from "./components/leftsidebar";
+import RightSidebar from "./components/rightsidebar";
 
 export default async function Home() {
   const session = await getServerSession();
@@ -13,6 +14,7 @@ export default async function Home() {
     <>
       <Navbar />
       <LeftSideBar />
+      <RightSidebar />
     </>
   );
 }
