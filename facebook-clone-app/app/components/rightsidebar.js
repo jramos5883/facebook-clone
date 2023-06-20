@@ -30,10 +30,6 @@ export default function RightSidebar() {
           </div>
 
           <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
 
           <div className="bg-gray-300 h-[44px] w-[44px] grid place-items-center text-[26px] rounded-full fixed right-0 bottom-0 mr-8 mb-8">
             <BiEdit />

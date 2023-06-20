@@ -4,6 +4,7 @@ import Login from "./components/login";
 import Navbar from "./components/navbar";
 import LeftSideBar from "./components/leftsidebar";
 import RightSidebar from "./components/rightsidebar";
+import Feed from "./components/feed";
 
 export default async function Home() {
   const session = await getServerSession();
@@ -15,6 +16,7 @@ export default async function Home() {
       <Navbar />
       <LeftSideBar />
       <RightSidebar />
+      <Feed />
     </>
   );
 }
